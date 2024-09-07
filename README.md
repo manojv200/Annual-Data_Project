@@ -1,6 +1,6 @@
 # Django Project
 
-This is a Django project that utilizes Django REST Framework for building APIs and integrates with several data processing libraries such as Pandas and NumPy.
+This is a Django project that utilizes Django REST Framework for building APIs and integrates with several data processing libraries such as Pandas.
 
 ## Requirements
 
