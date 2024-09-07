@@ -4,5 +4,5 @@ from .views import *
 
 
 urlpatterns = [
-    path('data/',ResponseApi.as_view(),name='data'),
+    path('data/', ResponseApi.as_view(), name='data'),
 ]
