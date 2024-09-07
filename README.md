@@ -17,4 +17,5 @@ To install the project dependencies, you can use the `requirements.txt` file. Be
 ```bash
 git clone https://your-repository-url.git
 cd your-repository-name
+pip install -r requirements.txt
 run python manage.py runserver 0.0.0.0:8080
