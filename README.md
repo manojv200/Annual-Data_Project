@@ -15,8 +15,8 @@ To install the project dependencies, you can use the `requirements.txt` file. Be
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://your-repository-url.git
-cd your-repository-name
+git clone https://github.com/manojv200/Annual-Data_Project.git
+cd your Annual-Data_Project
 pip install -r requirements.txt
 run python manage.py data
 run python manage.py runserver 0.0.0.0:8080
