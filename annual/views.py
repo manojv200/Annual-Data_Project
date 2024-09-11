@@ -12,9 +12,12 @@ class ResponseApi(APIView):
         data = request.GET
         well_no = data.get("well")
         annual_data = AnnualProduction.objects.filter(api_well_number=int(well_no)).first()
-        response = {
-            'oil': annual_data.total_oil,
-            'gas': annual_data.total_gas,
-            'brine': annual_data.total_brine,
-        }
+        if annual_data:
+            response = {
+                'oil': annual_data.total_oil,
+                'gas': annual_data.total_gas,
+                'brine': annual_data.total_brine,
+            }
+        else:
+            response = {'error': 'no data'}
         return Response(response)
